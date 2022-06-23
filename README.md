@@ -17,10 +17,13 @@ Learn MyQL Database
     product_name VARCHAR(50) NOT NULL
     )
 
-###Create Users
+### Create Users
     CREATE TABLE users( 
     id INT(11) PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL, 
     last_name VARCHAR(50) NULL, 
     email VARCHAR(50) NULL, 
     create_at TIMESTAMP );
+
+### Delete Table
+    DROP TABLE tablname
