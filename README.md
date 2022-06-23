@@ -5,7 +5,7 @@ Learn MyQL Database
 ## SQL Commands
 
 
-### Create Connection #1
+### Create Connection #1 ✅
      $servername = 'localhost';
     $username = 'root';
     $password = '';
@@ -22,7 +22,7 @@ Learn MyQL Database
         echo "TRA ERROR!";
     }
 
-### Create Connection #2
+### Create Connection #2 ✅
      $connect = new mysqli('localhost', 'root', '', 'php1_day10');
 
     if(!$connect->connect_error){
@@ -32,21 +32,21 @@ Learn MyQL Database
     }
 
 
-### Create New Database
+### Create New Database ✅
     CREATE DATABASE dbname
 
 
-### Delete Database
+### Delete Database ✅
     DROP DATABASE dbname
 
 
-### Create Table
+### Create Table ✅
     CREATE TABLE product(
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR(50) NOT NULL
 )
 
-### Create Users
+### Create Users ✅
     CREATE TABLE users( 
     id INT(11) AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL, 
@@ -54,15 +54,15 @@ Learn MyQL Database
     email VARCHAR(50) NULL, 
     create_at TIMESTAMP )
 
-### Delete Table
+### Delete Table ✅
     DROP TABLE tablname
 
 
-### Insert Data
+### Insert Data ✅
     INSERT INTO `product`(`id`, `product_name`) VALUES ('','Coffee Late')
 
-### Update Data
+### Update Data ✅
     UPDATE `product` SET `product_name`='Black Coffee' WHERE `id`=1
 
-### Delete Data
+### Delete Data✅
     DELETE FROM `product` WHERE `id`=2
