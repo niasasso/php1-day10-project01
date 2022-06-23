@@ -31,3 +31,6 @@ Learn MyQL Database
 
 ### Insert Data
     INSERT INTO `product`(`id`, `product_name`) VALUES ('','Coffee Late')
+
+### Update Data
+    UPDATE `product` SET `product_name`='Black Coffee' WHERE `id`=1
