@@ -27,3 +27,7 @@ Learn MyQL Database
 
 ### Delete Table
     DROP TABLE tablname
+
+
+### Insert Data
+    INSERT INTO `product`(`id`, `product_name`) VALUES ('','Coffee Late')
