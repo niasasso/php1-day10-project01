@@ -3,6 +3,35 @@ Learn MyQL Database
 
 
 ## SQL Commands
+
+
+### Create Connection #1
+     $servername = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'php1_day10';
+
+    // CREATE CONNECTION
+    $connect = new mysqli($servername, $username, $password, $database);
+
+    // CHECK CONNENTION
+    if($connect->connect_error){
+        // echo "ERROR!";
+        die("connection filed:" . $connect->connect_error);
+    } else {
+        echo "TRA ERROR!";
+    }
+
+### Create Connection #2
+     $connect = new mysqli('localhost', 'root', '', 'php1_day10');
+
+    if(!$connect->connect_error){
+        echo "TRA ERROR!";
+    } else {
+        echo "ADA ERROR!";
+    }
+
+
 ### Create New Database
     CREATE DATABASE dbname
 
