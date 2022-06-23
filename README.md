@@ -2,6 +2,10 @@
 Learn MyQL Database
 
 
-## SQL Commanda
+## SQL Commands
 ### Create New Database
     CREATE DATABASE dbname
+
+
+### Delete Database
+    DROP DATABASE dbname
